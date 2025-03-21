@@ -92,6 +92,5 @@ img {
 
 footer {
     padding: 10px;
-    background: #93804A;
     background: linear-gradient(0deg, var(--color-fondo2), transparent);
 }
