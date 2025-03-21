@@ -25,9 +25,12 @@
 
 body {
     margin: 0;
-    background-color: var(--color-fondo1);
+    /*background-color: var(--color-fondo1);*/
     color: var(--color-texto-base);
     font-family: "Fira Sans";
+    background:
+        radial-gradient(ellipse at top, var(--color-fondo1), transparent),
+        radial-gradient(ellipse at center, var(--color-fondo2), #000);
 }
 
 .content {
@@ -78,7 +81,7 @@ li {
 }
 
 img {
-    margin: 1ch;
+    margin: 2ch;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -87,3 +90,8 @@ img {
     max-height: 500px;
 }
 
+footer {
+    padding: 10px;
+    background: #93804A;
+    background: linear-gradient(0deg, var(--color-fondo2), transparent);
+}
