@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Página web</title>
+    <title>TARJETAS DE FIBRA DE RED</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css">
-    <script src="scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>
 </head>
-<body> 
+<body onload="main(0)"> 
     <header>
         <nav>
             <ul>
@@ -16,10 +16,10 @@
                     <a href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Tarjetas Fibra Optica Red</a>
+                    <a href="#">Tarjetas Fibra Óptica Red</a>
                 </li>
                 <li class="nav-item">
-                    <a href="tarjetas_fibra_san.html">Tarjetas Fibra Optica Almacenamiento</a>
+                    <a href="tarjetas_fibra_san.html">Tarjetas Fibra Óptica Almacenamiento</a>
                 </li>
                 <li class="nav-item">
                     <a href="tarjetas_ethernet.html">Tarjetas Ethernet</a>
@@ -31,8 +31,8 @@
         </nav>
     </header>
     <div class="content">
-        <h1>TARJETAS DE RED</h1>
-        <h3 style="text-align: center;">¿Necesitas una red que haga más que simplemente conectar dispositivos? ¡Las tarjetas de red de servidor están aquí para revolucionar tu infraestructura!</h3>
+        <h1>TARJETAS DE FIBRA DE RED</h1>
+        <h2>¿Necesitas una red que haga más que simplemente conectar dispositivos? ¡Las tarjetas de red de servidor están aquí para revolucionar tu infraestructura!</h2>
         
         <h3>VLAN (Virtual LAN):</h3>
         <p>¿Quieres segmentar tu red para mejorar la seguridad y el rendimiento? Con VLAN, puedes crear redes virtuales independientes dentro de una misma infraestructura física. ¡Ideal para separar departamentos, proyectos o servicios críticos!</p>
@@ -46,66 +46,50 @@
         <p>¿Baja latencia y alto rendimiento? RDMA permite transferencias de datos ultrarrápidas entre servidores, perfecto para entornos de virtualización, big data o almacenamiento en red de alta velocidad.</p>
 
         <h2>Productos:</h2>
-        <table align="center">
-            <tr>
-                <td><img src="../img/tarjeta_fibra.webp" alt="Tarjeta de red de fibra optica 1" style="width: 250px;"></td>
-                <td><img src="../img/fibra_red_25GB.png" alt="Tarjeta de red de fibra optica 2" style="width: 250px;"></td>
-            </tr>
-            <tr>
-                <th><h4>Tarjeta de red de fibra optica 1:</h4></th>
-                <th><h4>Tarjeta de red de fibra optica 2:</h4></th>
-            </tr>
-            <tr>
-                <td><p>Velocidad: 100Mbps</p></td>
-                <td><p>Velocidad: 25Gbps</p></td>
-            </tr>
-            <tr>
-                <td><p>Uso: Empresarial</p></td>
-                <td><p>Uso: Empresarial</p></td>
-            </tr>
-            <tr>
-                <td><p>Instalación: PCI</p></td>
-                <td><p>Instalación: PCIe</p></td>
-            </tr>
-        </table>
+        <div id="productos"></div>
+
         <h2>Información relevante de las tarjetas de fibra de Red:</h2>
         <h3>Tipos de conexión:</h3>
-        <p>Las tarjetetas de fibra optica de red suelen tener un conector universal donde luego se coloca un transciver que puede tener diferentes conexiones:</p>
+        <p>Las tarjetas de fibra óptica de red suelen tener un conector universal donde luego se coloca un transciver que puede tener diferentes conexiones:</p>
         <ul>
             <li>
-                <p>SC: Es el tipo de conector más barato, se ajusta a presión, es compacto y se usa habitualmente en redes FTTH conectando la ONT al PTRO de nuestro hogar. Es compatible con fibra monomodo y multimodo, tiene una pérdida de señal de en torno a 0,25dB.</p>
+                <p>SC: Es el tipo de conector más barato, se ajusta a presión, es compacto y se usa habitualmente en redes FTTH conectando la ONT al PTRO de nuestro hogar. Es compatible con fibra monomodo y multimodo, tiene una pérdida de señal de en torno a 0,25 dB.</p>
             </li>
             <li>
-                <p>LC: Es el tipo de conector más utilizado en los transceptores SFP de los switches profesionales, es de tipo push and pull, es muy compacto y permite mayor densidad de conectores en racks. Es compatible con fibra monomodo y multimodo y tiene una pérdida de señal de en torno a 0,10dB.</p>
+                <p>LC: Es el tipo de conector más utilizado en los transceptores SFP de los switches profesionales, es de tipo push and pull, es muy compacto y permite mayor densidad de conectores en racks. Es compatible con fibra monomodo y multimodo y tiene una pérdida de señal de en torno a 0,10 dB.</p>
             </li>
             <li>
-                <p>FC: Era muy usado hace años, pero ahora está cayendo en desuso a favor de los conectores SC y LC. Este conector se rosca y tiene una fijación resistente a vibraciones. Es compatible con fibra monomodo y tiene una pérdida de señal de en torno a 0,30dB.</p>
+                <p>FC: Era muy usado hace años, pero ahora está cayendo en desuso a favor de los conectores SC y LC. Este conector se rosca y tiene una fijación resistente a vibraciones. Es compatible con fibra monomodo y tiene una pérdida de señal de en torno a 0,30 dB.</p>
             </li>
             <li>
-                <p>ST: Ha sido utilizado en entornos profesionales y redes militares, se parece bastante al conector FC, pero su ajuste es similar al de un conector BNC. Se usa en fibras multimodo y la pérdida es de 0,25dB.</p>
+                <p>ST: Ha sido utilizado en entornos profesionales y redes militares, se parece bastante al conector FC, pero su ajuste es similar al de un conector BNC. Se usa en fibras multimodo y la pérdida es de 0,25 dB.</p>
             </li>
         </ul>
-        <h3>Velocidad de la fibra optica de red</h3>
-        <p>La velocidad de la fibra optica de red se mide en Gbps, la velocidad varia entre 100Mbps y 100Gbps.</p>
-        <h3>Uso principa de las tarjetas de fibra optica de red</h3>
-        <p>Los usos de las tarjetas de fibra optica de red son muy extensos, desde uso domestico hasta uso empresarial, pero los usos más conocidos son:</p>
+        <h3>Velocidad de la fibra óptica de red</h3>
+        <p>La velocidad de la fibra óptica de red se mide en Gbps, la velocidad varía entre 100 Mbps y 100 Gbps.</p>
+        <h3>Uso principal de las tarjetas de fibra óptica de red</h3>
+        <p>Los usos de las tarjetas de fibra óptica de red son muy extensos, desde uso doméstico hasta uso empresarial, pero los usos más conocidos son:</p>
         <ul>
             <li>
                 <p>Para servidores de alto rendimiento en centros de datos</p>
             </li>
             <li>
-                <p>Redes empresarial criticas</p>
+                <p>Redes empresariales críticas</p>
             </li>
             <li>
                 <p>Redes troncales con mucho flujo de datos y que requieran mucha velocidad</p>
             </li>
         </ul>
         <h3>Instalación:</h3>
-        <p>La instalación de las tarjetas de fibra optica de red suelen requerir un puerto PCIe o también pueden ir soldadadas a la placa base de los servidores, que suele ser lo mas habitual.</p>
+        <p>La instalación de las tarjetas de fibra óptica de red suelen requerir un puerto PCIe o también pueden ir soldadas a la placa base de los servidores, que suele ser lo más habitual.</p>
         <h3>Ventajas:</h3>
-        <p>Las ventajas de las tarjetas de fibra optica de red son: velocidad extremadamente alta, transmisión confiable a largas distancias, dependiendo del tipo de fibra (monomodo o multimodo).</p>
+        <p>Las ventajas de las tarjetas de fibra óptica de red son: velocidad extremadamente alta, transmisión confiable a largas distancias, dependiendo del tipo de fibra (monomodo o multimodo).</p>
         <h3>Desventajas:</h3>
-        <p>Las desventajas de las tarjetas de fibra optica de red son: infraestructura costosa y compleja de implementar.</p>
+        <p>Las desventajas de las tarjetas de fibra óptica de red son: infraestructura costosa y compleja de implementar.</p>
     </div>
+
+    <footer>
+        <p>Todos los derechos reservados ©</p>
+    </footer>
 </body>
 </html>

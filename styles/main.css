@@ -94,3 +94,7 @@ footer {
     padding: 10px;
     background: linear-gradient(0deg, var(--color-fondo2), transparent);
 }
+
+td {
+    text-align: center;
+}
